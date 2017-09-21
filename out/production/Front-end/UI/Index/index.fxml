@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@indexCss.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="62.0" prefWidth="189.0" style="-fx-background-color: fd5f3a; -fx-border-style: solid; -fx-border-color: fd5f3a;">
+         <children>
+            <ImageView fx:id="locoLogo" fitHeight="46.0" fitWidth="51.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/locomotive.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="62.0" layoutY="20.0" text="LOCOMAG" textFill="WHITE">
+               <font>
+                  <Font name="The Bold Font" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="189.0" prefHeight="28.0" prefWidth="1091.0" style="-fx-background-color: f1f1f1;">
+         <children>
+            <JFXButton fx:id="user" contentDisplay="CENTER" depthTest="ENABLE" layoutX="941.0" layoutY="-1.0" prefHeight="62.0" prefWidth="151.0" style="-fx-border-style: solid; -fx-border-color: ABB2B9;" text=" User" textAlignment="RIGHT">
+               <font>
+                  <Font name="Raleway-Regular" size="13.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="home" alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" prefHeight="62.0" prefWidth="75.0" style="-fx-border-style: solid;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Pane layoutX="74.0" layoutY="-1.0" prefHeight="62.0" prefWidth="868.0" style="-fx-border-style: solid; -fx-border-color: ABB2B9;" />
+            <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="946.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/iconuser.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="60.0" prefHeight="743.0" prefWidth="189.0" style="-fx-background-color: #4c4743;">
+         <children>
+            <JFXButton layoutY="395.0" prefHeight="54.0" prefWidth="189.0" style="-fx-border-style: solid; -fx-border-color: #433e3a   #4c4743;" text="Employees" textFill="#9e9691">
+               <graphic>
+                  <OctIconView fill="#9e9691" glyphName="ORGANIZATION" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Raleway-Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="71.0" prefHeight="54.0" prefWidth="189.0" style="-fx-border-style: solid; -fx-border-color: #433e3a   #4c4743;" text="Locomotives" textFill="#9e9691">
+               <graphic>
+                  <MaterialIconView fill="#9e9691" glyphName="TRAIN" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Raleway-Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="125.0" prefHeight="54.0" prefWidth="189.0" style="-fx-border-style: solid; -fx-border-color: #433e3a   #4c4743;" text="Failiures" textFill="#9e9691">
+               <graphic>
+                  <MaterialIconView fill="#9e9691" glyphName="BUILD" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Raleway-Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="179.0" prefHeight="54.0" prefWidth="189.0" style="-fx-border-style: solid; -fx-border-color: #433e3a   #4c4743;" text="Trips" textFill="#9e9691">
+               <graphic>
+                  <OctIconView fill="#9e9691" glyphName="ROCKET" size="20" text="" />
+               </graphic>
+               <font>
+                  <Font name="Raleway-Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="287.0" prefHeight="54.0" prefWidth="189.0" style="-fx-border-style: solid; -fx-border-color: #433e3a   #4c4743;" text="Schedule" textFill="#9e9691">
+               <graphic>
+                  <OctIconView fill="#9e9691" glyphName="CALENDAR" size="20" text="" />
+               </graphic>
+               <font>
+                  <Font name="Raleway-Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="233.0" prefHeight="54.0" prefWidth="189.0" style="-fx-border-style: solid; -fx-border-color: #433e3a   #4c4743;" text="Delays" textFill="#9e9691">
+               <graphic>
+                  <OctIconView fill="#9e9691" glyphName="HISTORY" size="20" text="" />
+               </graphic>
+               <font>
+                  <Font name="Raleway-Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="341.0" prefHeight="54.0" prefWidth="189.0" style="-fx-border-style: solid; -fx-border-color: #433e3a   #4c4743;" text="Maintenance" textFill="#9e9691">
+               <graphic>
+                  <OctIconView fill="#9e9691" glyphName="TOOLS" size="20" text="" />
+               </graphic>
+               <font>
+                  <Font name="Raleway-Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="-5.0" layoutY="448.0" prefHeight="54.0" prefWidth="189.0" style="-fx-border-style: solid; -fx-border-color: #433e3a   #4c4743;" text="Loco Position" textFill="#9e9691">
+               <graphic>
+                  <MaterialDesignIconView fill="#9e9691" glyphName="SUBWAY" size="20" />
+               </graphic>
+               <font>
+                  <Font name="Raleway-Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
