@@ -1,4 +1,4 @@
-package UI.Index.Foreman.TabPane;/**
+package UI.Foreman.TabPane;/**
  * Created by piumiindeevari on 9/21/2017.
  */
 
@@ -7,8 +7,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class TabPaneMain extends Application {
 
