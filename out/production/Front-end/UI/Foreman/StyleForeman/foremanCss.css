@@ -39,21 +39,24 @@
     -fx-background-color:transparent;
 }
 
-.tab-pane .tab:selected
-{
+.tab-pane .tab:selected .tab-label{
     -fx-background-color: #000000;
     -fx-alignment: CENTER;
-    -fx-text-fill: #ff9933;
+    -fx-text-fill: #ff6600;
+
+
 }
 
 .tab-pane {
-    -fx-tab-min-width:180px;
-    -fx-tab-max-width:180px;
+    -fx-tab-min-width:210px;
+    -fx-tab-max-width:210px;
     -fx-tab-min-height:50px;
     -fx-tab-max-height:50px;
-    -fx-background-image: url("train.jpg");
+    /*-fx-background-image: url("train.jpg");*/
 
 }
+
+
 
 .tab-pane .tab  {
 
@@ -62,11 +65,20 @@
     -fx-font-size: 12px;
     -fx-font-weight: bold;
 }
+#homeTab{
+    -fx-tab-min-width:300px;
+    -fx-tab-max-width:300px;
+    -fx-tab-min-height:50px;
+    -fx-tab-max-height:50px;
+}
 .tab-label{
     -fx-text-fill: gray;
 }
 
-.tab:hover .tab-label {
+.tab:hover .tab-label  {
     -fx-alignment: CENTER;
-    -fx-text-fill: #ff9933;
+    -fx-text-fill: #ffb380;
 }
+
+
+

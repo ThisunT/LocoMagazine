@@ -1,4 +1,4 @@
-package UI.Index.Foreman.TabPane;
+package Controller.Foreman;
 
 /**
  * Created by piumiindeevari on 9/21/2017.
