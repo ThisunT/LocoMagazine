@@ -10,7 +10,7 @@
             <tabs>
             <Tab fx:id="homeTab" text="Home">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="677.0" prefWidth="1099.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="680.0" prefWidth="1100.0">
                      <children>
                         <fx:include source="../home.fxml" />
                      </children></AnchorPane>
@@ -26,12 +26,18 @@
                 </Tab>
                 <Tab text="Recovery Options">
                     <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="../Recovery/recovery.fxml" />
+                     </children></AnchorPane>
                     </content>
                 </Tab>
                 <Tab text="Maintenance">
                     <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <fx:include source="../Maintenance/maintenance.fxml" />
+                     </children></AnchorPane>
                     </content>
                 </Tab>
                 <Tab closable="false" text="Schedule">
