@@ -5,8 +5,10 @@
       <root url="jar://$PROJECT_DIR$/../lib/jackson-core-asl-1.9.13.jar!/" />
       <root url="jar://$PROJECT_DIR$/../lib/jackson-mapper-asl-1.9.13.jar!/" />
       <root url="jar://$PROJECT_DIR$/../lib/jfoenix.jar!/" />
+      <root url="file://F:/Libraries" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://F:/Libraries" recursive="false" />
   </library>
 </component>
