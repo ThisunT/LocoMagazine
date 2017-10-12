@@ -4,12 +4,11 @@
 
 #ForemanBaseAnchorPane{
     -fx-content-display:block;
-    -fx-font-weight :bold;
     -fx-background-color:#c4c4c4;
 }
 
 .tab-pane *.tab-header-area *.tab-header-background {
-    -fx-background-color:#4c4743;
+    -fx-background-color:#c4c4c4;
     -fx-border-style: solid;
     -fx-border-color: #f1f1f1;
     -fx-border-width: 0px 0px 1px 0px;
@@ -26,15 +25,15 @@
 .tab-pane {
     -fx-tab-min-width:198px;
     -fx-tab-max-width: 1090px;
-    -fx-tab-min-height:50px;
+    -fx-tab-min-height:30px;
     /*-fx-background-image: url("train.jpg");*/
 }
 
 .tab-pane .tab  {
     -fx-alignment: CENTER;
-    -fx-background-color: #4c4743;
+    -fx-background-color: #c4c4c4;
     -fx-font-size: 16px;
-    -fx-font-weight: bold;
+
 }
 
 .tab-pane .tab:hover{
@@ -42,7 +41,7 @@
 }
 
 .tab-label{
-    -fx-text-fill: #c4c4c4;
+    -fx-text-fill: #433e3a;
 }
 
 .tab:hover .tab-label  {

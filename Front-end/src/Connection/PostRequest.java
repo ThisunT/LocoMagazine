@@ -1,4 +1,4 @@
-package connection;
+package Connection;
 
 /**
  * Created by Thisun Pathirage on 9/3/2017.

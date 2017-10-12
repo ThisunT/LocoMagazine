@@ -1,4 +1,4 @@
-package connection;
+package Connection;
 
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;

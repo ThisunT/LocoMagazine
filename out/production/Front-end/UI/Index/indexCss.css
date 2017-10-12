@@ -9,3 +9,9 @@
     -fx-text-fill:#c4c4c4;
     -fx-border-style: none;
 }
+
+#btnHome{
+    -fx-border-style: solid;
+    -fx-border-color: #433e3a;
+    -fx-border-width: 0px 2px 0px 0px;
+}
