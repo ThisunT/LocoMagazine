@@ -20,6 +20,8 @@ import java.util.ResourceBundle;
  * Created by piumiindeevari on 10/10/2017.
  */
 public class FailureController implements Initializable {
+    String failure;
+    String Faiure_Type;
     List<String> listCombo = new ArrayList<>();
 
     public ComboBox<String> combo_failureType;
@@ -30,6 +32,7 @@ public class FailureController implements Initializable {
     private ResultSet rs = null;
 
 
+
     public FailureController() {
         conn=Connect.ConnectDB();
 
@@ -38,6 +41,12 @@ public class FailureController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        this.setCombo_FailureType();
+
+    }
+
+
+    void setCombo_FailureType(){
         String sql = "SELECT * FROM failure";
 
         try{
@@ -50,6 +59,21 @@ public class FailureController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
+
+    void setCombo_FailureType(){
+        String sql = "SELECT * FROM failure";
+
+        try{
+            ps= conn.prepareStatement(sql);
+            rs= ps.executeQuery(sql);
+            while (rs.next()) {
+                listCombo.add(rs.getString("Failure_Type"));
+                combo_failureType.setItems(FXCollections.observableArrayList(listCombo));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
