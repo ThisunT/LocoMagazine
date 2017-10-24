@@ -8,7 +8,7 @@ var Locomotive = {
         return db.query("select * from locomotive where id=?", [id], callback);
     },
     addLocomotive: function (locomotive, callback) {
-        return db.query("insert into locomotive(name,state) values(?,?)", [locomotive.name, locomotive.state], function (err, count) {
+        return db.query("insert into locomotive(EngineNumber,EngineType,Today,Shed,Manufacturer,TopSpeed,ManufacturedDay,State) values(?,?,?,?,?,?,?,?)", [locomotive.engineNumber, locomotive.engineType, locomotive.today, locomotive.shed, locomotive.manufacturer, locomotive.topSpeed, locomotive.manufacturedDay, locomotive.state], function (err, count) {
             if (err) {
                 callback(err, null);
             } else {

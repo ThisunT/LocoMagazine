@@ -10,7 +10,7 @@ public class ObjectToJson {
     static {
         mapper = new ObjectMapper();
     }
-    public static String convertor(Object object){
+    public static String converter(Object object){
         String jsonResult = null;
         try {
             try {

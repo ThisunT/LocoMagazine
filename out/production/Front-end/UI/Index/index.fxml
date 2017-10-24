@@ -85,7 +85,7 @@
       </AnchorPane>
    </left>
    <center>
-       <AnchorPane fx:id="holderPane" prefHeight="779.0" prefWidth="1090.0" BorderPane.alignment="TOP_CENTER">
+       <AnchorPane fx:id="holderPane" prefHeight="740.0" prefWidth="1090.0" BorderPane.alignment="TOP_LEFT">
            <children>
             <AnchorPane fx:id="holderDash" layoutY="60.0" prefHeight="740.0" prefWidth="1090.0" />
                

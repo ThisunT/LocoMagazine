@@ -13,11 +13,11 @@ app.use(bodyParser.urlencoded({
 }));
 var port = 3000;
 
-var router = express.Router()
+var router = express.Router();
 
 
-var LocomotiveRoute = require("./routes/LocomotiveRoute")
-router.use('/locomotive', LocomotiveRoute)
+var LocomotiveRoute = require("./routes/LocomotiveRoute");
+router.use('/locomotive', LocomotiveRoute);
 
 app.use('/api', router);
 

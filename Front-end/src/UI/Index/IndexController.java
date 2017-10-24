@@ -35,7 +35,6 @@ public class IndexController implements Initializable{
         //Load all fxmls in a cache
         try {
             home = FXMLLoader.load(getClass().getResource("../ATE/TabPane/tabPane.fxml"));
-            locomotives = FXMLLoader.load(getClass().getResource("../Dashboard/Locomotive/locomotiveViewer.fxml"));
            /* failures = FXMLLoader.load(getClass().getResource("Alerts.fxml"));
             trips = FXMLLoader.load(getClass().getResource("Pricing.fxml"));
             delays = FXMLLoader.load(getClass().getResource("Profiles.fxml"));
@@ -69,11 +68,25 @@ public class IndexController implements Initializable{
         ft.play();
     }
 
+    private void setNodeLoco(){
+        LocomotiveViewer locoView = new LocomotiveViewer();
+        AnchorPane locoViewerAnchor = new AnchorPane();
+        locoViewerAnchor.getChildren().add(locoView.pages());
+        holderPane.getChildren().clear();
+        holderPane.getChildren().add(locoViewerAnchor);
+
+        FadeTransition ft = new FadeTransition(Duration.millis(500));
+        ft.setNode(locoViewerAnchor);
+        ft.setFromValue(0.1);
+        ft.setToValue(1);
+        ft.setCycleCount(1);
+        ft.setAutoReverse(false);
+        ft.play();
+    }
+
     @FXML
     private void switchLocomotives(ActionEvent event) {
-        setNode(locomotives);
-        LocomotiveViewer lv = new LocomotiveViewer();
-        lv.setTrainID("Loco");
+        setNodeLoco();
     }
 
     @FXML

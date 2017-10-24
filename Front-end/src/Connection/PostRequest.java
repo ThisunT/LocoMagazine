@@ -54,7 +54,7 @@ public class PostRequest {
 
     public static void sendPostRequest(String targetUrl, Object jsonObject) throws IOException {
 
-        String newJsonObject = ObjectToJson.convertor(jsonObject);
+        String newJsonObject = ObjectToJson.converter(jsonObject);
 
         URL myUrl = new URL(targetUrl);
         HttpURLConnection con = (HttpURLConnection) myUrl.openConnection();
