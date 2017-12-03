@@ -53,7 +53,7 @@ public class login_controller implements Initializable {
         String username = tf_uname.getText().toString();
         String pwd = btn_pwd.getText().toString();
 
-        String sql = "SELECT * FROM users WHERE username = ? and pwd = ?";
+        String sql = "SELECT * FROM user WHERE username = ? and pwd = ?";
 
         try{
             ps= conn.prepareStatement(sql);
